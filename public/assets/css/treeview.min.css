@@ -1,0 +1,75 @@
+.treeview,
+.treeview *
+{
+    list-style: none;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.treeview label {
+	font-weight: normal;
+	background: transparent !important;
+	margin: 0 !important;
+	display: inline-flex;
+	align-items: center;
+}
+
+
+.treeview input[type=checkbox] {
+    width : 16px;
+    height :16px;
+    padding: 0px;
+    margin: 0px 10px 0px 0px;
+}
+
+.treeview ul:not(.base) {
+    display: none;
+}
+
+.treeview .fa {
+	font-style: normal;
+	cursor: pointer;
+	position: relative;
+	margin-right: 0;
+	display: inline-flex;
+	align-items: center;
+	top: -4px;
+}
+
+.treeview .fas {
+    font-style: normal;
+    cursor: pointer;
+}
+
+.treeview .base {
+    white-space:nowrap;
+		padding: 0
+}
+.treeview .base .fa:after {
+	content: "\F415";
+	font: 24px/1 "Material Design Icons"
+}
+.treeview .base .fa.fa-minus:after {
+	content: "\F374"
+}
+.treeview .base li > div {
+	display: flex;
+	align-items: center;
+}
+.treeview .base li li {
+	margin: 5px 0;
+}
+.treeview .base li li li {
+	margin: 10px 0;
+}
+#treeview > li > ul {
+	padding-left: 25px !important;
+}
+#treeview ul ul {
+	padding-left: 29px !important;
+}
+/* .treeview .base li > div > label:before {
+	content: "\F24B";
+	font: 18px/1 "Material Design Icons";
+	margin-right: 8px;
+} */
